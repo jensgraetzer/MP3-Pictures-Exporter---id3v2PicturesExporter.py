@@ -33,3 +33,4 @@ https://id3.org/id3v2.4.0-frames (last visited 2020-06-11)
 https://id3.org/id3v2.3.0 (last visited 2020-06-11) 
 4. J. Grätzer, Multimedia Data Categories, 2020
 https://github.com/jensgraetzer/MP3-Pictures-Exporter/blob/master/Multimedia-Data-Categories.pdf (last visited 2020-06-11)
+https://github.com/jensgraetzer/MP3-Pictures-Exporter/Multimedia-Data-Categories.pdf
