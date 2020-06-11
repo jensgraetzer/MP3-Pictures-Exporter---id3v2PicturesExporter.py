@@ -19,7 +19,7 @@ Try id3v2PicturesExporter.py with the sample data attached.
 The ID3v2.4 contains a bigger picture, format 16:9.
 * sample02_C_Major_Prelude.mp3
 The ID3v2.4 contains six bigger pictures, format 16:9 and subtitle text in a SYLT frame.
-* sample03_Presentation.mp3
+* ![sample03_Presentation.mp3](https://github.com/jensgraetzer/MP3-Pictures-Exporter/blob/master/sample03_Presentation.mp3)
 The ID3v2.4 contains four bigger pictures, format 16:9 and subtitle text in a SYLT frame.
 * sample04_Karaoketext.mp3
 The ID3v2.4 contains one little picture 600x600 pixel and a subtitle text in a SYLT frame. The subtitle contains a time stamp for every single word.
@@ -32,4 +32,4 @@ https://id3.org/id3v2.4.0-frames (last visited 2020-06-11)
 3. M. Nilsson, Informal Standard: ID3 tag version 2.3.0, 1999,
 https://id3.org/id3v2.3.0 (last visited 2020-06-11) 
 4. J. Grätzer, Multimedia Data Categories, 2020
-https://github.com/jensgraetzer/MP3-Pictures-Exporter/blob/master/Multimedia-Data-Categories.md (last visited 2020-06-11)
+https://github.com/jensgraetzer/MP3-Pictures-Exporter/blob/master/Multimedia-Data-Categories.pdf (last visited 2020-06-11)
