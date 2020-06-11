@@ -10,7 +10,7 @@ Nowadays MP3 audio files contain text and maybe pictures as well. These addition
 
 This version of id3v2PicturesExporter.py assumes the ID3v2 tag to be at the beginning of the MP3 file. It does not support ID3v2 tags at the end oft the MP3 file.
 
-Usage: Run the script id3v2PicturesExporter.py. A file picker opens. Pick a MP3 file an press the “open” button. The script shows all frame names in the output and writes audio and picture files. The file names of these files start with “PPP_”.
+Usage: Run the script __id3v2PicturesExporter.py__. A file picker opens. Pick a MP3 file an press the “open” button. The script shows all frame names in the output and writes audio and picture files. The file names of these files start with “PPP_”.
 Try id3v2PicturesExporter.py with the sample data attached.
 
 # Sample MP3 files
