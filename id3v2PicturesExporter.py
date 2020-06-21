@@ -5,7 +5,9 @@ Reads a MP3 file with an ID3v2.3  or ID3v2.4 tag.
 Finds all APIC frames. Exports the APIC pictures into a file.
 Exports the pure MP3 audio into a file as well.
 
-J. Grätzer, 2020-06-08
+J. Grätzer
+2020-06-08 
+2020-06-21 ... bugfix mimetype unicode
    
 '''
 
@@ -130,8 +132,6 @@ def processFirst10Bytes(myfile) :
     mySize = mySize * 128 + int(bytesRead[9])
     
     print("OK, the tag-only size is: " + str(mySize) + " = "  + hex(mySize))
-    
-    #exit(0) # Successful exit TEST ----------
 
     if myFlagFooter == True :
         myBruttoSize = 20 + mySize   # Header is 10 bytes, and footer is 10 bytes long
@@ -250,36 +250,21 @@ def exportPictureFromAPIC(myFullTag, myStartByteAddress, myLastByteAddress) :
     n = n + 1    # position after the frame header and the text encoding byte
     print("   APIC scan: Next adr. after encoding byte = " + hex(n))
     
-    # Go over the MIME type string
+    # Go over the MIME type string (ASCII)
     startsFrom = n
     while True:
         # find the '\0' at the end of the string
-        if bytesPerChar == 1 :
-            if(myFullTag[n]) == 0 :
-                n = n + 1  # goto next data address
-                break
-            else :
-                n = n + 1  # step to the next byte
+        if(myFullTag[n]) == 0 :
+            n = n + 1  # goto next data address
+            break
         else :
-            # with bytesPerChar == 2
-            if(myFullTag[n] == 0 and myFullTag[n + 1]) == 0 :
-                n = n + 2  # next data address is after the second '\0'
-                break
-            else :
-                n = n + 1  # steps are 1 byte wide
+            n = n + 1  # step to the next byte
         
         if n >= myLastByteAddress:
             print("   APIC scan: ERROR: Found no end of string. (1)")
             break
     
-    if textEncodingCode == 0 :
-        mimeTypeString = myFullTag[startsFrom:(n - 1)].decode('latin-1')  
-    elif textEncodingCode == 1 :   # Text UTF-16 with BOM 
-        mimeTypeString = myFullTag[(startsFrom + 2):(n - 1)].decode('utf-16-le')
-    elif textEncodingCode == 2 :   # Text UTF-16BE without BOM 
-        mimeTypeString = myFullTag[startsFrom:(n - 1)].decode('utf-16-be') 
-    else :
-        mimeTypeString = myFullTag[startsFrom:(n - 1)].decode('utf8') 
+    mimeTypeString = myFullTag[startsFrom:(n - 1)].decode('latin-1')  
     print("   Picture MIME type = " + mimeTypeString)
     
     fileExtension = ".jpg"
@@ -392,4 +377,3 @@ exportPureAudioStartingAt(filename, bruttoSize)
 
 # Finish
 print("OK, ready. Audio and APIC data exported into files " + globBinFilePrefix + "*.mp3/jpg/png")
-
