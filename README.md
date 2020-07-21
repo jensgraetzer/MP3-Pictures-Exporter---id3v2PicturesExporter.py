@@ -4,7 +4,7 @@ The python script __id3v2PicturesExporter.py__ exports the pictures contained in
 file. It exports the pure MP3 audio data as well. Only tag versions ID3v2.3 and ID3v2.4 are
 supported.
 
-# Audio and pictures export with Id3v2PicturesExporter.py
+# Audio and pictures export with id3v2PicturesExporter.py
 
 Nowadays MP3 audio files contain text and maybe pictures as well. These additional data is stored in the so called ID3v2 tag [1][2][3]. The text is metadata such as the album, artist, songname, and so on. ID3v2 tags may be contain subtitles as well, and many more information. There may be even one or more pictures stored. This way, MP3 files with a ID3v2 tag are examples of multimedia data stored in a single file [4].
 
