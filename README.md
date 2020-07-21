@@ -8,9 +8,9 @@ supported.
 
 Nowadays MP3 audio files contain text and maybe pictures as well. These additional data is stored in the so called ID3v2 tag [1][2][3]. The text is metadata such as the album, artist, songname, and so on. ID3v2 tags may be contain subtitles as well, and many more information. There may be even one or more pictures stored. This way, MP3 files with a ID3v2 tag are examples of multimedia data stored in a single file [4].
 
-This version of id3v2PicturesExporter.py assumes the ID3v2 tag to be at the beginning of the MP3 file. It does not support ID3v2 tags at the end oft the MP3 file.
+This version of __id3v2PicturesExporter.py__ assumes the ID3v2 tag to be at the beginning of the MP3 file. It does not support ID3v2 tags at the end oft the MP3 file.
 
-Usage: Run the script __id3v2PicturesExporter.py__. A file picker opens. Pick a MP3 file an press the “open” button. The script shows all frame names in the output and writes audio and picture files. The file names of these files start with “PPP_”.
+Usage: Run the script __id3v2PicturesExporter.py__. A file picker opens. Pick a MP3 file and press the "open" button. The script shows all frame names in the output and writes audio and picture files. The file names of these files start with "PPP_".
 Test __id3v2PicturesExporter.py__ with the sample MP3 files attached.
 
 # Sample MP3 files
