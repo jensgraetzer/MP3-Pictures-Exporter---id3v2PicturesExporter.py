@@ -22,7 +22,7 @@ The ID3v2.4 tag contains six bigger pictures in the format 16:9, and subtitle te
 * https://github.com/jensgraetzer/MP3-Pictures-Exporter/blob/master/sample03_Presentation.mp3 ... 
 The ID3v2.4 tag contains one cover picture 600x600 pixel, four bigger pictures in the format 16:9, and subtitle text in a SYLT frame. The subtitle has time stamps for the bigger pictures.
 * https://github.com/jensgraetzer/MP3-Pictures-Exporter/blob/master/sample04_Karaoketext.mp3 ... 
-The ID3v2.4 tag contains one cover picture 600x600 pixel and a subtitle text in a SYLT frame. The subtitle has a time stamp for every single word.
+The ID3v2.4 tag contains one cover picture 600x600 pixel, and a subtitle text in a SYLT frame. The subtitle has a time stamp for every single word.
 
 # References
 1. M. Nilsson, Informal Standard: ID3 tag version 2.4.0 - Main Structure, 2000,
