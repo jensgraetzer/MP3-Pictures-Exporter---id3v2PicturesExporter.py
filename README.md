@@ -1,6 +1,6 @@
 # MP3-Pictures-Exporter
 
-The python script __id3v2PicturesExporter.py__ exports the pictures contained in ID3v2 tag of a MP3
+The python script __id3v2PicturesExporter.py__ exports the pictures contained in a ID3v2 tag of a MP3
 file. It exports the pure MP3 audio data as well. Only tag versions ID3v2.3 and ID3v2.4 are
 supported.
 
